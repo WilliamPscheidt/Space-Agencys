@@ -34,21 +34,24 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={() => IncrementarDados()}>Página+</button>
-      <button onClick={() => DecrementarDados()}>Página-</button>
+      <div className="container">
+        <button onClick={() => IncrementarDados()}>Página+</button>
+        <button onClick={() => DecrementarDados()}>Página-</button>
 
-      <ExibirDados
-        agenciaA = {dados.length>0 ? dados[0].abbrev : "Sem dados"}
-        agenciaB = {dados.length>0 ? dados[1].abbrev : "Sem dados"}
-        agenciaC = {dados.length>0 ? dados[2].abbrev : "Sem dados"}
-        agenciaD = {dados.length>0 ? dados[3].abbrev : "Sem dados"}
-        agenciaE = {dados.length>0 ? dados[4].abbrev : "Sem dados"}
-        agenciaF = {dados.length>0 ? dados[5].abbrev : "Sem dados"}
-        agenciaG = {dados.length>0 ? dados[6].abbrev : "Sem dados"}
-        agenciaH = {dados.length>0 ? dados[7].abbrev : "Sem dados"}
-        agenciaI = {dados.length>0 ? dados[8].abbrev : "Sem dados"}
-        agenciaJ = {dados.length>0 ? dados[9].abbrev : "Sem dados"}
-      />
+        <ExibirDados
+          agenciaA = {dados.length>0 ? dados[0].abbrev : "Sem dados"}
+          agenciaB = {dados.length>0 ? dados[1].abbrev : "Sem dados"}
+          agenciaC = {dados.length>0 ? dados[2].abbrev : "Sem dados"}
+          agenciaD = {dados.length>0 ? dados[3].abbrev : "Sem dados"}
+          agenciaE = {dados.length>0 ? dados[4].abbrev : "Sem dados"}
+          agenciaF = {dados.length>0 ? dados[5].abbrev : "Sem dados"}
+          agenciaG = {dados.length>0 ? dados[6].abbrev : "Sem dados"}
+          agenciaH = {dados.length>0 ? dados[7].abbrev : "Sem dados"}
+          agenciaI = {dados.length>0 ? dados[8].abbrev : "Sem dados"}
+          agenciaJ = {dados.length>0 ? dados[9].abbrev : "Sem dados"}
+        />
+      </div>
+
 
     </div>
   );
