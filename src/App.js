@@ -28,8 +28,6 @@ function App() {
       })
   }
 
-  console.log(dados)
-
   return (
     <div className="App">
       <div className="container-btns">
