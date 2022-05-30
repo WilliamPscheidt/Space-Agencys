@@ -50,6 +50,7 @@
 .texto {
     color: white;
     word-break: break-all;
+    font-size: 18px;
     margin-top: 10px;
 }
 

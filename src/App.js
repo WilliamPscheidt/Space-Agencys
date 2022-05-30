@@ -32,8 +32,8 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={() => IncrementarDados()}>Página+</button>
-      <button onClick={() => DecrementarDados()}>Página-</button>
+      <button onClick={() => IncrementarDados()}>Page +</button>
+      <button onClick={() => DecrementarDados()}>Page -</button>
       <div className="container">
 
         {
@@ -47,22 +47,22 @@ function App() {
                     </div>
 
                     <div className="container-dados">
-                      <p className="texto"><span className="tag">URL</span>{dados[i].url}</p>
-                      <p className="texto"><span className="tag">Name</span>{dados[i].name}</p>
-                      <p className="texto"><span className="tag">Type</span>{dados[i].type}</p>
-                      <p className="texto"><span className="tag">Country Code</span>{dados[i].country_code}</p>
-                      <p className="texto"><span className="tag">Description</span>{dados[i].description}</p>
-                      <p className="texto"><span className="tag">Administrator</span>{dados[i].administrator}</p>
-                      <p className="texto"><span className="tag">Founding Year</span>{dados[i].founding_year}</p>
-                      <p className="texto"><span className="tag">Launchers</span>{dados[i].launchers}</p>
-                      <p className="texto"><span className="tag">Spacecraft</span>{dados[i].spacecraft}</p>
+                      {dados[i].url && <p className="texto"><span className="tag">URL</span>{dados[i].url}</p>}
+                      {dados[i].name && <p className="texto"><span className="tag">Name</span>{dados[i].name}</p>}
+                      {dados[i].type && <p className="texto"><span className="tag">Type</span>{dados[i].type}</p>}
+                      {dados[i].country_code && <p className="texto"><span className="tag">Country</span>{dados[i].country_code}</p>}
+                      {dados[i].description && <p className="texto"><span className="tag">Description</span>{dados[i].description}</p>}
+                      {dados[i].administrator && <p className="texto"><span className="tag">Administrator</span>{dados[i].administrator}</p>}
+                      {dados[i].founding_year && <p className="texto"><span className="tag">Founding Year</span>{dados[i].founding_year}</p>}
+                      {dados[i].launchers && <p className="texto"><span className="tag">Launchers</span>{dados[i].launchers}</p>}
+                      {dados[i].spacecraft && <p className="texto"><span className="tag">Spacecraft</span>{dados[i].spacecraft}</p>}
                     </div>
                   </div>
                 </div>
               ]
             })
             :
-            "Carregando os dados.."
+            "Loading.."
         }
       </div>
 
