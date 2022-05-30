@@ -16,6 +16,26 @@
     align-items: center;
 }
 
+.container-btns {
+    width: 86%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -40px;
+}
+
+.btnPagina {
+    margin: 20px;
+    width: 300px;
+    border: none;
+    background-color: rgb(36, 32, 32);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 .container {
     width: 90%;
     display: flex;

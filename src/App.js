@@ -32,8 +32,10 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={() => IncrementarDados()}>Page +</button>
-      <button onClick={() => DecrementarDados()}>Page -</button>
+      <div className="container-btns">
+        <button className="btnPagina" onClick={() => DecrementarDados()}>Page -</button>
+        <button className="btnPagina" onClick={() => IncrementarDados()}>Page +</button>
+      </div>
       <div className="container">
 
         {
@@ -43,7 +45,7 @@ function App() {
                 <div className='card'>
                   <div className="container-card">
                     <div className="card-titulo">
-                      <p className="abreviatura">Abbrev: {dados[i].abbrev}</p>
+                      <p className="abreviatura">Agency: {dados[i].abbrev}</p>
                     </div>
 
                     <div className="container-dados">
