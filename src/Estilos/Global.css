@@ -22,13 +22,25 @@
 
 .card {
     margin: 20px;
-    padding: 20px;
+    padding: 50px;
     background-color: aliceblue;
-    height: 300px;
-    width: 100%;
+    height: auto;
+    width: 1500px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+}
+
+.container-card {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+.texto {
+    word-break: break-all;
 }
 
 span {

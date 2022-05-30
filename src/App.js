@@ -41,22 +41,24 @@ function App() {
             dados.map((item, i) => {
               return [
                 <div className='card'>
-                  <span>{dados[i].abbrev}</span>
-                  <span>{dados[i].url}</span>
-                  <span>{dados[i].name}</span>
-                  <span>{dados[i].type}</span>
-                  <span>{dados[i].country_code}</span>
-                  <span>{dados[i].description}</span>
-                  <span>{dados[i].administrator}</span>
-                  <span>{dados[i].founding_year}</span>
-                  <span>{dados[i].launchers}</span>
-                  <span>{dados[i].spacecraft}</span>
-                  <span>{dados[i].image_url}</span>
+                  <div className="container-card">
+                    <p className="texto">{dados[i].abbrev}</p>
+                    <p className="texto">{dados[i].url}</p>
+                    <p className="texto">{dados[i].name}</p>
+                    <p className="texto">{dados[i].type}</p>
+                    <p className="texto">{dados[i].country_code}</p>
+                    <p className="texto">{dados[i].description}</p>
+                    <p className="texto">{dados[i].administrator}</p>
+                    <p className="texto">{dados[i].founding_year}</p>
+                    <p className="texto">{dados[i].launchers}</p>
+                    <p className="texto">{dados[i].spacecraft}</p>
+                    <p className="texto">{dados[i].image_url}</p>
+                  </div>
                 </div>
               ]
             })
             :
-            "Oi"
+            "Carregando os dados.."
         }
       </div>
 
