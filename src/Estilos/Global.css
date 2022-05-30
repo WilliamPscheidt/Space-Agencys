@@ -17,7 +17,7 @@
 }
 
 .container {
-    width: 1200px;
+    width: 90%;
     display: flex;
     margin-top: 30px;
     justify-content: center;
@@ -49,7 +49,7 @@
 .texto {
     color: white;
     word-break: break-all;
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 10px;
 }
 
@@ -78,7 +78,11 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    body {
-      background-color: lightblue;
+    .tag {
+        padding: 0 10px;
+    }
+
+    .texto { 
+        font-size: 14px;
     }
   }
