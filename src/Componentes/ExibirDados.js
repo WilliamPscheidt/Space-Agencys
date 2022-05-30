@@ -4,11 +4,11 @@ const ExibirDados = (props) => {
   return (
     <>
         <div className='card'>
-            <span>{props.agenciaA}</span>
+            <span>{props.agencia[0].abbrev}</span>
         </div>
 
         <div className='card'>
-            <span>{props.agenciaB}</span>
+            <span>{props.agencia[1].abbrev}</span>
         </div>
 
         <div className='card'>

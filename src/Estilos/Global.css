@@ -26,6 +26,7 @@
     background-color: aliceblue;
     width: 300px;
     height: 300px;
+    border-radius: 20px;
 }
 
 span {
