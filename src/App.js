@@ -34,9 +34,9 @@ function App() {
 
   return (
     <div className="App">
+      <button onClick={() => IncrementarDados()}>Página+</button>
+      <button onClick={() => DecrementarDados()}>Página-</button>
       <div className="container">
-        <button onClick={() => IncrementarDados()}>Página+</button>
-        <button onClick={() => DecrementarDados()}>Página-</button>
 
         <ExibirDados
           agenciaA = {dados.length>0 ? dados[0].abbrev : "Sem dados"}

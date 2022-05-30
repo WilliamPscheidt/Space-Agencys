@@ -3,16 +3,45 @@ import React from 'react'
 const ExibirDados = (props) => {
   return (
     <>
-        <span>{props.agenciaA}</span>
-        <span>{props.agenciaB}</span>
-        <span>{props.agenciaC}</span>
-        <span>{props.agenciaD}</span>
-        <span>{props.agenciaE}</span>
-        <span>{props.agenciaF}</span>
-        <span>{props.agenciaG}</span>
-        <span>{props.agenciaH}</span>
-        <span>{props.agenciaI}</span>
-        <span>{props.agenciaJ}</span>
+        <div className='card'>
+            <span>{props.agenciaA}</span>
+        </div>
+
+        <div className='card'>
+            <span>{props.agenciaB}</span>
+        </div>
+
+        <div className='card'>
+            <span>{props.agenciaC}</span>
+        </div>
+
+        <div className='card'>
+            <span>{props.agenciaD}</span>
+        </div>
+
+        <div className='card'>
+            <span>{props.agenciaE}</span>
+        </div>
+
+        <div className='card'>
+            <span>{props.agenciaF}</span>
+        </div>
+
+        <div className='card'>
+            <span>{props.agenciaG}</span>
+        </div>
+
+        <div className='card'>
+            <span>{props.agenciaH}</span>
+        </div>
+
+        <div className='card'>
+            <span>{props.agenciaI}</span>
+        </div>
+        
+        <div className='card'>
+            <span>{props.agenciaJ}</span>
+        </div>
     </>
   )
 }
