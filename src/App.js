@@ -42,17 +42,21 @@ function App() {
               return [
                 <div className='card'>
                   <div className="container-card">
-                    <p className="texto">{dados[i].abbrev}</p>
-                    <p className="texto">{dados[i].url}</p>
-                    <p className="texto">{dados[i].name}</p>
-                    <p className="texto">{dados[i].type}</p>
-                    <p className="texto">{dados[i].country_code}</p>
-                    <p className="texto">{dados[i].description}</p>
-                    <p className="texto">{dados[i].administrator}</p>
-                    <p className="texto">{dados[i].founding_year}</p>
-                    <p className="texto">{dados[i].launchers}</p>
-                    <p className="texto">{dados[i].spacecraft}</p>
-                    <p className="texto">{dados[i].image_url}</p>
+                    <div className="card-titulo">
+                      <p className="abreviatura">Abbrev: {dados[i].abbrev}</p>
+                    </div>
+
+                    <div className="container-dados">
+                      <p className="texto"><span className="tag">URL</span>{dados[i].url}</p>
+                      <p className="texto"><span className="tag">Name</span>{dados[i].name}</p>
+                      <p className="texto"><span className="tag">Type</span>{dados[i].type}</p>
+                      <p className="texto"><span className="tag">Country Code</span>{dados[i].country_code}</p>
+                      <p className="texto"><span className="tag">Description</span>{dados[i].description}</p>
+                      <p className="texto"><span className="tag">Administrator</span>{dados[i].administrator}</p>
+                      <p className="texto"><span className="tag">Founding Year</span>{dados[i].founding_year}</p>
+                      <p className="texto"><span className="tag">Launchers</span>{dados[i].launchers}</p>
+                      <p className="texto"><span className="tag">Spacecraft</span>{dados[i].spacecraft}</p>
+                    </div>
                   </div>
                 </div>
               ]
