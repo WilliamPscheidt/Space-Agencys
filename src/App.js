@@ -13,25 +13,36 @@ function App() {
   }, [])
 
   const IncrementarDados = () => {
-    setPagina(pagina + 10)
-    axios.get("https://spacelaunchnow.me/api/ll/2.1.0/agencies/?offset=" + pagina)
-      .then(res => {
-        setDados(res.data.results)
-      })
+    if(pagina === 280) {
+      alert("Limite de página atingido, experimente clicar emm 'Page -'")
+    } else {
+      setPagina(pagina + 10)
+      axios.get("https://spacelaunchnow.me/api/ll/2.1.0/agencies/?offset=" + pagina)
+        .then(res => {
+          setDados(res.data.results)
+        })
+    }
+
   }
 
   const DecrementarDados = () => {
-    setPagina(pagina - 10)
-    axios.get("https://spacelaunchnow.me/api/ll/2.1.0/agencies/?offset=" + pagina)
-      .then(res => {
-        setDados(res.data.results)
-      })
+    if(pagina === 0) {
+      alert("Limite de página atingido, experimente clicar emm 'Page +'")
+    } else {
+      setPagina(pagina - 10)
+      axios.get("https://spacelaunchnow.me/api/ll/2.1.0/agencies/?offset=" + pagina)
+        .then(res => {
+          setDados(res.data.results)
+        })
+    }
   }
 
   return (
     <div className="App">
       <div className="container-btns">
         <button className="btnPagina" onClick={() => DecrementarDados()}>Page -</button>
+        <span className="texto-desktop">Página atual: {pagina/10}</span>
+        <span className="texto-mobile">{pagina/10}</span>
         <button className="btnPagina" onClick={() => IncrementarDados()}>Page +</button>
       </div>
       <div className="container">
